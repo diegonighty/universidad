@@ -1,0 +1,3 @@
+C:/Users/mvcar/dev/FUNDAMENTOS DE PROGRAMACION/UNIDAD 1/PRACTICA3/cmake-build-debug/CMakeFiles/PRACTICA3.dir
+C:/Users/mvcar/dev/FUNDAMENTOS DE PROGRAMACION/UNIDAD 1/PRACTICA3/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/mvcar/dev/FUNDAMENTOS DE PROGRAMACION/UNIDAD 1/PRACTICA3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
