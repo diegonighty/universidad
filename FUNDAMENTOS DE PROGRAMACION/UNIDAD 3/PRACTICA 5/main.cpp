@@ -1,34 +1,21 @@
-// Diego Cardenas Vaarela
-// Practica 5
+// PRACTICA 5 - NUMERO MEDIO
+// DIEGO CARDENAS
 #include <iostream>
 using namespace std;
+
 int main() {
-    int a, b, c, m;
+    int a, b, c;
 
-    cout << "Ingrese el número A:" << endl;
-    cin >> a;
+    cout << "Ingresa tres numeros enteros: ";
+    cin >> a >> b >> c;
 
-    cout << "Ingrese el numero B:" << endl;
-    cin >> b;
-
-    cout << "Ingrese el numero C:" << endl;
-    cin >> c;
-
-    if ((b > a && a > c) || (c > a && a > b)) {
-        m = a;
+    if ((a > b && a < c) || (a < b && a > c)) {
+        cout << "El numero medio es: " << a << endl;
+    } else if ((b > a && b < c) || (b < a && b > c)) {
+        cout << "El numero medio es: " << b << endl;
+    } else {
+        cout << "El numero medio es: " << c << endl;
     }
 
-    if ((a > b && b > c) || (c > b && b > a)) {
-        m = b;
-    }
-
-    if ((b > c && c > a) || (a > c && c > b))
-    {
-        m = c;
-    }
-
-    m = 0;
-
-    cout << "El numero del medio es " << m;
     return 0;
 }
