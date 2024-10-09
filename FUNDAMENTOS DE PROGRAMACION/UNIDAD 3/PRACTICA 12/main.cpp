@@ -38,7 +38,7 @@ int main() {
         cout << "Usted ingreso la vocal " << letra;
         break;
     default:
-        cout << "No es vocal";
+        cout << "No pertenece a el abecedario";
         break;
     }
 
