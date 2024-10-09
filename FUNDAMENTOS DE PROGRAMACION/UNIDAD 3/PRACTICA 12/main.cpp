@@ -25,6 +25,7 @@ int main() {
     case 's':
     case 't':
     case 'w':
+    case 'v':
     case 'x':
     case 'y':
     case 'z':
