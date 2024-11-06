@@ -2,13 +2,13 @@
 using namespace std;
 
 int main() {
-    int n, num;
+    int n, num, i = 0;
     int positivos = 0, negativos = 0, ceros = 0;
 
     cout << "¿Cuántos números quieres ingresar? ";
     cin >> n;
 
-    for (int i = 0; i < n; i++) {
+    do {
         cout << "Ingresa un número: ";
         cin >> num;
         if (num > 0) {
@@ -18,7 +18,8 @@ int main() {
         } else {
             ceros++;
         }
-    }
+        i++;
+    } while (i < n);
 
     cout << "Positivos: " << positivos << endl;
     cout << "Negativos: " << negativos << endl;
