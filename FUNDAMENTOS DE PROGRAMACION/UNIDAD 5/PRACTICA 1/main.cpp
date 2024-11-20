@@ -15,9 +15,13 @@ int main() {
         cout << endl;
     }
 
+    int suma = 0;
     for (int i = 0; i < n; i++) {
-        cout << "v[" << i << "] = " << v[i] << endl;
+        suma += v[i];
     }
+
+    double promedio = static_cast<double>(suma) / n;
+    cout << "El promedio de los elementos del vector es: " << promedio << endl;
 
     return 0;
 }
