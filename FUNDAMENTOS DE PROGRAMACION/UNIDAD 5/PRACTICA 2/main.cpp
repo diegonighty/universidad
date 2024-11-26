@@ -15,8 +15,7 @@ int main()
 
     int mayores = 0;
     int menores = 0;
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         if (vector[i] > 50) {
             mayores++;
         } else if (vector[i] < 50) {
