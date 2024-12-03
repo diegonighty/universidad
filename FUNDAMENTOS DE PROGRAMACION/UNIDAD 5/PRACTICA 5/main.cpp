@@ -21,14 +21,28 @@ int main()
         }
     }
 
-    int nuevoVector[n];
-    for (int i = 0; i <= n; i++) {
-        nuevoVector[i] = vector[i == 0 ? n - 1 : i - 1];
-    }
+    char respuesta;
+    do
+    {
+        int nuevoVector[n];
+        for (int i = 0; i <= n; i++) {
+            nuevoVector[i] = vector[i == 0 ? n - 1 : i - 1];
+        }
 
-    for (int i = 0; i < n; i++) {
-        cout << "El valor " << i + 1 << " es: " << nuevoVector[i] << endl;
-    }
+        for (int i = 0; i < n; i++) {
+            vector[i] = nuevoVector[i];
+        }
+
+        for (int i = 0; i < n; i++) {
+            cout << vector[i] << " ";
+        }
+
+
+        cout << endl << "¿Desea rotar el vector? (s/n): ";
+        cin >> respuesta;
+
+        system("cls");
+    } while (respuesta == 's' || respuesta == 'S');
 
 
     return 0;
