@@ -16,6 +16,10 @@ public class Proveedor {
         this.saldo = saldo;
     }
 
+    public void vender(Producto producto, int precio) {
+        producto.incrementaExistencia();
+        producto.cambiaPrecio(precio);
+    }
 
     public int getIdProveedor() {
         return idProveedor;
